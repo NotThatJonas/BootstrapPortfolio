@@ -14,7 +14,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 50%;
   margin: 0 auto;
   clear: both;
 }
@@ -127,7 +127,7 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
@@ -139,7 +139,7 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 43%;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -156,12 +156,12 @@ h3, h2 {
 
 .work h3 {
   position: absolute;
-  bottom: 20px;
+  bottom: 10%;
   width: 100%;
-  padding: 15px;
+  padding: 8%;
   margin-bottom: 0;
   font-weight: 300;
-  line-height: 30px;
+  line-height: auto;
   color: #ffffff;
   text-align: center;
   background: #4aaaa5;
@@ -170,10 +170,10 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: 40%;
   height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
+  margin-top: 5%;
+  margin-right: 8%;
 }
 
 /* contact page */
@@ -197,14 +197,14 @@ textarea {
 input[type=text],
 input[type=email],
 textarea {
-  height: 35px;
+  height: 4vh;
   padding: 0 10px;
   font-size: 14px;
   border: 1px solid #dddddd;
 }
 
 textarea {
-  height: 200px;
+  height: 40vh;
 }
 
 input[type=submit] {
@@ -216,8 +216,177 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media and (max-width: 960px) {
-  .indexmain {
-    width: 50%;
+@media screen and (max-width: 980px) {
+  .main-section {
+    background: black;
   }
-}
+
+  #logo {
+    position: static;
+    width: 100%;
+  }
+
+  .auth-image {
+    border: 1px solid white;
+  }
+  
+    .navContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    ul li {
+      width: 43vw;
+    }
+
+    .container {
+      max-width: 97%;
+    }
+
+    body {
+      width: 60%;
+    }
+
+    #main-container {
+      width: 97%;
+    }
+
+    #contact-form {
+      width: 60%;
+    }
+
+
+
+    .work{
+      width:40%;
+    }
+  
+  }
+
+  @media screen and (max-width: 768px) {
+  .main-section {
+    background: black;
+  }
+
+  .auth-image {
+    border: 1px solid white;
+  }
+
+  #logo {
+    position: static;
+    width: 100%;
+  }
+  
+    .navContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    nav {
+      float: left;
+      margin-top: 25px;
+      margin-left: 27%;
+    }
+
+    .container {
+      max-width: 97%;
+    }
+
+    body {
+      width: 97%;
+    }
+
+    ul li {
+      width: 43vw;
+    }
+
+    #main-container {
+      width: 97%;
+    }
+
+    #contact-form {
+      width: 97%;
+    }
+
+    .work{
+      width:45%;
+      margin: auto;
+    }
+
+    #name {
+      width: 580px;
+    }
+
+    #email {
+      width: 580px;
+    }
+
+    #message {
+      width: 580px;
+    }
+  
+  }
+
+  @media screen and (max-width: 640px) {
+    #logo {
+      position: static;
+      width: 100%;
+    }
+
+    #name {
+      width: 450px;
+    }
+
+    #email {
+      width: 450px;
+    }
+
+    #message {
+      width: 450px;
+    }
+    
+    .auth-image {
+      border: 1px solid white;
+      float: none;
+      margin: 0 30%;
+    }
+
+      .navContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      nav {
+        float: left;
+        margin-top: 25px;
+        margin-left: 27%;
+      }
+
+      .container {
+        max-width: 97%;
+      }
+
+      body {
+        width: 97%;
+      }
+
+      #main-container {
+        width: 97%;
+      }
+
+      #contact-form {
+        width: 97%;
+      }
+
+      .work{
+        width:95%;
+        margin: auto;
+      }
+
+    }
